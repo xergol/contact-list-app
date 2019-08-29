@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>EvolentHealthProject</title>
+  <base href="https://xergol.github.io/contact-list-app/">  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      // Activate tooltip
+      $('[data-toggle="tooltip"]').tooltip();
+      
+      // Select/Deselect checkboxes
+      var checkbox = $('table tbody input[type="checkbox"]');
+      $("#selectAll").click(function(){
+        if(this.checked){
+          checkbox.each(function(){
+            this.checked = true;                        
+          });
+        } else{
+          checkbox.each(function(){
+            this.checked = false;                        
+          });
+        } 
+      });
+      checkbox.click(function(){
+        if(!this.checked){
+          $("#selectAll").prop("checked", false);
+        }
+      });
+    });
+    </script>
+<link rel="stylesheet" href="styles.09e2c710755c8867a460.css"></head>
+
+<body>
+  <app-root></app-root>
+<script src="polyfills-es5.f9fad3ad3c84e6dbdd72.js" nomodule defer></script><script src="polyfills-es2015.fd917e7c3ed57f282ee5.js" type="module"></script><script src="scripts.859e64cef1ef944f8beb.js" defer></script><script src="runtime-es2015.24b02acc1f369d9b9f37.js" type="module"></script><script src="main-es2015.4d03b31a4545df3b89dc.js" type="module"></script><script src="runtime-es5.24b02acc1f369d9b9f37.js" nomodule defer></script><script src="main-es5.4d03b31a4545df3b89dc.js" nomodule defer></script></body>
+
+</html>
